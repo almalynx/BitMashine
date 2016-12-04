@@ -67,6 +67,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Resources\Resources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -94,6 +98,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\clash.png" />
+    <Resource Include="Resources\Pictures\close hat.png" />
+    <Resource Include="Resources\Pictures\kick.png" />
+    <Resource Include="Resources\Pictures\open hat.png" />
+    <Resource Include="Resources\Pictures\play.png" />
+    <Resource Include="Resources\Pictures\snare.png" />
+    <Resource Include="Resources\Pictures\tom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\note1.png" />
+    <Resource Include="Resources\Pictures\note2.png" />
+    <Resource Include="Resources\Pictures\note3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Pictures\target.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

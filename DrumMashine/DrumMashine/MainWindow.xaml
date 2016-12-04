@@ -5,8 +5,460 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DrumMashine"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="DrumMashine" Height="350" Width="330">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Resources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="Black" Offset="0"/>
+            <GradientStop Color="#FF3064A2" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+        </Grid.RowDefinitions>
+        <Button  HorizontalAlignment="Center" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="0">
+            <StackPanel>
+                <Image Source="Resources/Pictures/play.png" />
+            </StackPanel>
+        </Button>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/kick.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/snare.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="3">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/open hat.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="4">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/close hat.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="5">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="5">
+            <StackPanel>
+                <Image Source="Resources/Pictures/clash.png" />
+            </StackPanel>
+        </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="6">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="6">
+            <StackPanel>
+                <Image Source="Resources/Pictures/tom.png" />
+            </StackPanel>
+        </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="7">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="7">
+            <StackPanel>
+                <Image Source="Resources/Pictures/note1.png" />
+            </StackPanel>
+        </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="8">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="8">
+            <StackPanel>
+                <Image Source="Resources/Pictures/note2.png" />
+            </StackPanel>
+        </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="9">
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="9">
+            <StackPanel>
+                <Image Source="Resources/Pictures/note3.png" />
+            </StackPanel>
+        </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+            <Button  HorizontalAlignment="Left" Height="25" Margin="10,0,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <StackPanel>
+                    <Image Source="Resources/Pictures/target.png" />
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </Grid>
 </Window>
