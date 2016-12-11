@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DrumMashine"
         mc:Ignorable="d"
-        Title="DrumMashine" Height="350" Width="330">
+        Title="DrumMashine" Height="360" Width="340">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -14,10 +14,7 @@
         </ResourceDictionary>
     </Window.Resources>
     <Window.Background>
-        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-            <GradientStop Color="Black" Offset="0"/>
-            <GradientStop Color="#FF3064A2" Offset="1"/>
-        </LinearGradientBrush>
+        <ImageBrush ImageSource="Resources/Pictures/background.jpg" />
     </Window.Background>
     <Grid>
         <Grid.RowDefinitions>
