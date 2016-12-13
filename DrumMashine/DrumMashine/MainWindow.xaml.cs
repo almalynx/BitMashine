@@ -23,6 +23,25 @@ namespace DrumMashine
         public MainWindow()
         {
             InitializeComponent();
+            List<List<ChoiceElement>> ticks = new List<List<ChoiceElement>>();
+            for (int i = 1; i < 7; i++)
+            {
+                ticks.Add(new List<ChoiceElement>());
+            }
+            for (int i = 1; i < 10; i++)
+            {
+                ticks[0].Add(new ChoiceElement(i));
+                ticks[1].Add(new ChoiceElement(i));
+                ticks[2].Add(new ChoiceElement(i));
+                ticks[3].Add(new ChoiceElement(i));
+                ticks[4].Add(new ChoiceElement(i));
+                ticks[5].Add(new ChoiceElement(i));
+                ticks[6].Add(new ChoiceElement(i));
+            }
+            Binding binding = new Binding();
+            lbTick1.DataContext = ticks[1];
+            binding.Source = ticks[1];
+            lbTick1.SetBinding(ListBox.ItemsSourceProperty, binding);
         }
     }
 }
