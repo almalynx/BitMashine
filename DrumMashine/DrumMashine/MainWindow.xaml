@@ -30,6 +30,12 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="40"/>
                 <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Vertical" Grid.Column="0">
                 <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
@@ -78,9 +84,92 @@
                     </StackPanel>
                 </Button>
             </StackPanel>
-
             <ListBox Name="lbTick1" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="1"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                                <StackPanel>
+                                    <Image Source="Resources/Pictures/target.png" />
+                                </StackPanel>
+                            </Button>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ListBox>
+            <ListBox Name="lbTick2" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="2"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                            <StackPanel>
+                                <Image Source="Resources/Pictures/target.png" />
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+            <ListBox Name="lbTick3" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="3"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                            <StackPanel>
+                                <Image Source="Resources/Pictures/target.png" />
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+            <ListBox Name="lbTick4" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="4"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                            <StackPanel>
+                                <Image Source="Resources/Pictures/target.png" />
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+            <ListBox Name="lbTick5" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="5"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                            <StackPanel>
+                                <Image Source="Resources/Pictures/target.png" />
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+            <ListBox Name="lbTick6" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="6"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                            <StackPanel>
+                                <Image Source="Resources/Pictures/target.png" />
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+            <ListBox Name="lbTick7" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="7"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                            <StackPanel>
+                                <Image Source="Resources/Pictures/target.png" />
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
+            <ListBox Name="lbTick8" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
+                           ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="8"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
