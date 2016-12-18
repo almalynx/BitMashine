@@ -36,49 +36,59 @@
                 <ColumnDefinition Width="40"/>
                 <ColumnDefinition Width="40"/>
                 <ColumnDefinition Width="40"/>
+                <ColumnDefinition Width="40"/>
             </Grid.ColumnDefinitions>
+            <MediaElement x:Name="sound1" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound2" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound3" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound4" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound5" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound6" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound7" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound8" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
+            <MediaElement x:Name="sound9" Visibility="Hidden" LoadedBehavior="Manual" MediaFailed="media_MediaFailed"/>
             <StackPanel Orientation="Vertical" Grid.Column="0">
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="ButtonKick_Click">
                     <StackPanel>
                         <Image Source="Resources/Pictures/kick.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="ButtonSnare_Click">
                     <StackPanel>
                         <Image Source="Resources/Pictures/snare.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="ButtonOpenHat_Click">
                     <StackPanel>
                         <Image Source="Resources/Pictures/open hat.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="ButtonHighHat_Click">
                     <StackPanel>
                         <Image Source="Resources/Pictures/close hat.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="5">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="5" Click="ButtonCrash_Click">
                     <StackPanel>
                         <Image Source="Resources/Pictures/clash.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="6">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="6" Click="ButtonTom_Click">
                     <StackPanel>
                         <Image Source="Resources/Pictures/tom.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="7">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="7" PreviewMouseLeftButtonDown="ButtonP1_PreviewMouseLeftButtonDown" PreviewMouseRightButtonDown="ButtonP1_PreviewMouseRightButtonDown" >
                     <StackPanel>
                         <Image Source="Resources/Pictures/note1.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="8">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="8" PreviewMouseLeftButtonDown="ButtonP2_PreviewMouseLeftButtonDown">
                     <StackPanel>
                         <Image Source="Resources/Pictures/note2.png" />
                     </StackPanel>
                 </Button>
-                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="9">
+                <Button  HorizontalAlignment="Left" Height="25" Margin="10,5,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Grid.Row="9" PreviewMouseLeftButtonDown="ButtonP3_PreviewMouseLeftButtonDown">
                     <StackPanel>
                         <Image Source="Resources/Pictures/note3.png" />
                     </StackPanel>
@@ -86,21 +96,21 @@
             </StackPanel>
             <ListBox Name="lbTick1" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="1"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
-                                <StackPanel>
-                                    <Image Source="Resources/Pictures/target.png" />
-                                </StackPanel>
-                            </Button>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ListBox>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
+                            <StackPanel>
+                                <Image Source="Resources/Pictures/target.png" />
+                            </StackPanel>
+                        </Button>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListBox>
             <ListBox Name="lbTick2" HorizontalAlignment="Left" Background="Transparent" Height="auto" Margin="0,0,0,0" Padding="0,0,0,0" BorderThickness="0" VerticalAlignment="Top" Width="auto" 
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="2"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
                             <StackPanel>
                                 <Image Source="Resources/Pictures/target.png" />
                             </StackPanel>
@@ -112,7 +122,7 @@
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="3"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
                             <StackPanel>
                                 <Image Source="Resources/Pictures/target.png" />
                             </StackPanel>
@@ -124,7 +134,7 @@
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="4"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
                             <StackPanel>
                                 <Image Source="Resources/Pictures/target.png" />
                             </StackPanel>
@@ -136,7 +146,7 @@
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="5"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
                             <StackPanel>
                                 <Image Source="Resources/Pictures/target.png" />
                             </StackPanel>
@@ -148,7 +158,7 @@
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="6"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
                             <StackPanel>
                                 <Image Source="Resources/Pictures/target.png" />
                             </StackPanel>
@@ -160,7 +170,7 @@
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="7"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
                             <StackPanel>
                                 <Image Source="Resources/Pictures/target.png" />
                             </StackPanel>
@@ -172,7 +182,7 @@
                            ScrollViewer.HorizontalScrollBarVisibility="Disabled" Grid.Column="8"  ScrollViewer.VerticalScrollBarVisibility="Disabled">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Button Tag="{Binding Path=Tag}" HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand">
+                        <Button Tag="{Binding Path=Tag}"  HorizontalAlignment="Left" Height="25" Margin="0,1,0,0" VerticalAlignment="Center" Width="25" Style="{StaticResource ClearButton}" Cursor="Hand" Click="RadioButton_Click">
                             <StackPanel>
                                 <Image Source="Resources/Pictures/target.png" />
                             </StackPanel>
@@ -181,6 +191,5 @@
                 </ItemsControl.ItemTemplate>
             </ListBox>
         </Grid>
-
     </Grid>
 </Window>
